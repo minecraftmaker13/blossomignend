@@ -14,18 +14,20 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.blossomingvoid.block.LuminocupBlock;
+import net.mcreator.blossomingvoid.block.StarStemBlock;
+import net.mcreator.blossomingvoid.block.StarBulbBlock;
 import net.mcreator.blossomingvoid.BlossomingvoidMod;
 
 public class BlossomingvoidModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, BlossomingvoidMod.MODID);
-	public static final RegistryObject<Block> LUMINOCUP = REGISTRY.register("luminocup", () -> new LuminocupBlock());
+	public static final RegistryObject<Block> STAR_BULB = REGISTRY.register("star_bulb", () -> new StarBulbBlock());
+	public static final RegistryObject<Block> STAR_STEM = REGISTRY.register("star_stem", () -> new StarStemBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
-			LuminocupBlock.registerRenderLayer();
+			StarStemBlock.registerRenderLayer();
 		}
 	}
 }

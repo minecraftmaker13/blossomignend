@@ -17,7 +17,9 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
-import net.mcreator.blossomingvoid.world.features.plants.LuminocupFeature;
+import net.mcreator.blossomingvoid.world.features.ores.StarStemFeature;
+import net.mcreator.blossomingvoid.world.features.ores.StarBulbFeature;
+import net.mcreator.blossomingvoid.world.features.BulbFeature;
 import net.mcreator.blossomingvoid.BlossomingvoidMod;
 
 import java.util.function.Supplier;
@@ -29,8 +31,12 @@ import java.util.ArrayList;
 public class BlossomingvoidModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, BlossomingvoidMod.MODID);
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
-	public static final RegistryObject<Feature<?>> LUMINOCUP = register("luminocup", LuminocupFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, LuminocupFeature.GENERATE_BIOMES, LuminocupFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> STAR_BULB = register("star_bulb", StarBulbFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, StarBulbFeature.GENERATE_BIOMES, StarBulbFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> STAR_STEM = register("star_stem", StarStemFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, StarStemFeature.GENERATE_BIOMES, StarStemFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> BULB = register("bulb", BulbFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, BulbFeature.GENERATE_BIOMES, BulbFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

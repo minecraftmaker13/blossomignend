@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "blossomingvoid:blocks/starbulb",
+    "up": "blossomingvoid:blocks/starbulb",
+    "north": "blossomingvoid:blocks/starbulb",
+    "east": "blossomingvoid:blocks/starbulb",
+    "south": "blossomingvoid:blocks/starbulb",
+    "west": "blossomingvoid:blocks/starbulb",
+    "particle": "blossomingvoid:blocks/starbulb"
+  }
+}

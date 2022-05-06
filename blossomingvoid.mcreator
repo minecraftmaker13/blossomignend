@@ -1,19 +1,64 @@
 {
   "mod_elements": [
     {
-      "name": "Luminocup",
-      "type": "plant",
-      "sortid": 1,
+      "name": "StarBulb",
+      "type": "block",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "luminocup"
+      "registry_name": "star_bulb"
+    },
+    {
+      "name": "StarStem",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "star_stem"
+    },
+    {
+      "name": "Bulb",
+      "type": "structure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bulb"
+    },
+    {
+      "name": "StarBulbNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "star_bulb_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.blossomingvoid.luminocup": "Luminocup Plant"
+      "block.blossomingvoid.star_bulb": "Star Bulb",
+      "block.blossomingvoid.star_stem": "Star Stem"
     }
   },
   "foldersRoot": {
@@ -34,6 +79,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.blossomingvoid",
     "lockBaseModFiles": false
   },

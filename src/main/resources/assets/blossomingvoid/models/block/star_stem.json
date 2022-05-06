@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "blossomingvoid:blocks/stem1",
+    "particle": "blossomingvoid:blocks/stem1"
+  }
+}
