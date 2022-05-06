@@ -26,6 +26,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.blossomingvoid.init.BlossomingvoidModTabs;
 import net.mcreator.blossomingvoid.init.BlossomingvoidModItems;
 import net.mcreator.blossomingvoid.init.BlossomingvoidModFeatures;
 import net.mcreator.blossomingvoid.init.BlossomingvoidModBlocks;
@@ -44,7 +45,7 @@ public class BlossomingvoidMod {
 	private static int messageID = 0;
 
 	public BlossomingvoidMod() {
-
+		BlossomingvoidModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		BlossomingvoidModBlocks.REGISTRY.register(bus);
 		BlossomingvoidModItems.REGISTRY.register(bus);

@@ -51,6 +51,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "BlossomingVoid",
+      "type": "tab",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blossoming_void"
     }
   ],
   "variable_elements": [],
@@ -58,6 +66,7 @@
   "language_map": {
     "en_us": {
       "block.blossomingvoid.star_bulb": "Star Bulb",
+      "itemGroup.tabblossoming_void": "Blossoming Void",
       "block.blossomingvoid.star_stem": "Star Stem"
     }
   },
