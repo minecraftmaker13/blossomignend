@@ -1,9 +1,20 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Luminocup",
+      "type": "plant",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "luminocup"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.blossomingvoid.luminocup": "Luminocup Plant"
+    }
   },
   "foldersRoot": {
     "name": "~",
